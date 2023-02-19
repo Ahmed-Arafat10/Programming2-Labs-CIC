@@ -33,3 +33,4 @@
 - programming is like going to the gym
 - programming is 99% logic, 1% memorizing the syntax
 - your life in the tech field depends on your programming level
+- for each lab, there will be an assignment
