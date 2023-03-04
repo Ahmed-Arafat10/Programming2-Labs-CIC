@@ -96,6 +96,10 @@ Vacuum Tube
 a semiconductor device for amplifying, controlling, and generating electrical signals
 - A single processor (`CPU`) contains billions of transistors that process & executes instructions
 <p style="text-align: center">
+<img src="Pics/lab1_3.png">
+Transistor
+</p>
+<p style="text-align: center">
 <img src="Pics/lab1_4.jpg">
 Modern CPUs
 </p>
@@ -125,9 +129,12 @@ Running Word Program
 
 - The logical question here is why do `RAM` exists, why CPU not interacting directly with `HDD` ?!
 - The problem here is that the `CPU` is so fast while the `HDD` is so slow. When a fast hardware component interacts with other slow components,
-the fast component will 
+the fast component will decrease its speed to be compatible with the slower component, this phenomenon is called `bottleneck`. This means no matter
+the speed of the `CPU` it will be, we won't be able to utilize this speed no matter what, so that the `RAM` is invented that is way faster than the `HDD`
+& at the same type has an enough space (4-32GB) not like `CPU`'s cache which might be only `8MB` 
 
 ## 6. Logical Structure of the RAM
+  
 ## 7. C++ Vs Java (Syntax Vs Principles)
 ## 8. Why we prefer using java in Prog. 2 ?
 ## 9. So, Is it really hard to learn Java ?
