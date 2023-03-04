@@ -11,7 +11,31 @@
 ## 9. for loop
 ## 10. do-while loop
 
-## program 1: check GPA (if statement)
+## program 1: Grade GPA (if statement)
+
+````cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int grade;
+    string res;
+    cin>>grade;
+    if(grade >= 90) res = "A+";
+    else if(grade >= 85) res = "A";
+    else if(grade >= 75) res = "B+";
+    else if(grade >= 70) res = "B";
+    else if(grade >= 60) res = "C+";
+    else if(grade >= 55) res = "C";
+    else if(grade >= 50) res = "D";
+    else res = "F";
+
+    cout<<"Your Result Is: "<<res;
+
+}
+````
+
 ## program 2: check drink (switch)
 ## program 4: sum input from users if n != -1 (while)
 ## program 5: sum of numbers from 1 to N (for loop)
