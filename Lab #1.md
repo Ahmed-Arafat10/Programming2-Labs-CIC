@@ -130,11 +130,21 @@ Running Word Program
 - The logical question here is why do `RAM` exists, why CPU not interacting directly with `HDD` ?!
 - The problem here is that the `CPU` is so fast while the `HDD` is so slow. When a fast hardware component interacts with other slow components,
 the fast component will decrease its speed to be compatible with the slower component, this phenomenon is called `bottleneck`. This means no matter
-the speed of the `CPU` it will be, we won't be able to utilize this speed no matter what, so that the `RAM` is invented that is way faster than the `HDD`
+the speed of the `CPU` it will be, we won't be able to utilize this speed no matter what, so that the `RAM` was invented as it is way faster than the `HDD`
 & at the same type has an enough space (4-32GB) not like `CPU`'s cache which might be only `8MB` 
 
 ## 6. Logical Structure of the RAM
-  
+- The most important part for programmers among the above three parts, can you guess ?!
+- The `RAM` is the most important part for the programmers, there is an advanced branch in computer science called `Data Structure`
+- `Data Structure`: is a branch in `CS` that is concerned with storing & organizing the data in the `RAM`, it is considered to be one of the main topics the professional programmer must know
+- When a program is slow/crashes/consume a lot of memory, one of the most important reason for all of the above problem is that the programmer who wrote the code has used the wrong `Data Structure` (or not using it at all)  
+- Let's observe the Logical Structure of the RAM from the following Diagram:
+<p style="text-align: center">
+<img src="Pics/lab1_8.png"> <br>
+Logical Structure of the RAM
+</p>
+
+
 ## 7. C++ Vs Java (Syntax Vs Principles)
 ## 8. Why we prefer using java in Prog. 2 ?
 ## 9. So, Is it really hard to learn Java ?
@@ -143,15 +153,3 @@ the speed of the `CPU` it will be, we won't be able to utilize this speed no mat
 ## 12. Physical Structure of the RAM
 ## 13. Run Time Vs Compile Time
 ## 14. What happens in the main memory when we run a C++ program
-
-
-
-
-
-
-
-
-
-
-
-
