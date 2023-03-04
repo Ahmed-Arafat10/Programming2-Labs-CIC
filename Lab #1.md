@@ -94,12 +94,12 @@ This machine was able to use logic to decipher the encrypted messages produced b
 to process simple instructions, but the problem with it is that it was huge, easily heated, damaged easily & of course slow 
 
 <p style="text-align: center">
-<img src="Pics/lab1_2.jpg" height="300" alt="">
+<img src="Pics/lab1_2.jpg" height="300" alt=""> <br>
 First Generation Of Computers
 </p>
 
 <p style="text-align: center">
-<img alt="" src="Pics/lab1_1.webp" height="300">
+<img alt="" src="Pics/lab1_1.webp" height="300"><br>
 Vacuum Tube
 </p>
 
@@ -107,15 +107,15 @@ Vacuum Tube
 a semiconductor device for amplifying, controlling, and generating electrical signals
 - A single processor (`CPU`) contains billions of transistors that process & executes instructions
 <p style="text-align: center">
-<img alt="" src="Pics/lab1_3.png" height="300">
+<img alt="" src="Pics/lab1_3.png" height="300"><br>
 Transistor
 </p>
 <p style="text-align: center">
-<img alt="" src="Pics/lab1_4.jpg" height="300">
+<img alt="" src="Pics/lab1_4.jpg" height="300"><br>
 Modern CPUs
 </p>
 <p style="text-align: center">
-<img alt="" src="Pics/lab1_5.png" height="300">
+<img alt="" src="Pics/lab1_5.png" height="300"><br>
 Billions Of Transistors Inside A CPU
 </p>
 
@@ -270,7 +270,7 @@ int main()
 `*`: is a predefined or reserved word in C++ library with a fixed meaning and used to perform an internal operation. C++ Language supports more than 64 keywords.
 
 <p style="text-align: center">
-<img alt="" src="Pics/lab1_9.png"> <br>
+<img alt="" src="Pics/lab1_9.png" height="300"> <br>
 Keywords In C++
 </p>
 
