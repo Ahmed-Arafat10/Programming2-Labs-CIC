@@ -94,12 +94,12 @@ This machine was able to use logic to decipher the encrypted messages produced b
 to process simple instructions, but the problem with it is that it was huge, easily heated, damaged easily & of course slow 
 
 <p style="text-align: center">
-<img src="Pics/lab1_2.jpg" alt="">
+<img src="Pics/lab1_2.jpg" height="300" alt="">
 First Generation Of Computers
 </p>
 
 <p style="text-align: center">
-<img alt="" src="Pics/lab1_1.webp">
+<img alt="" src="Pics/lab1_1.webp" height="300">
 Vacuum Tube
 </p>
 
@@ -107,15 +107,15 @@ Vacuum Tube
 a semiconductor device for amplifying, controlling, and generating electrical signals
 - A single processor (`CPU`) contains billions of transistors that process & executes instructions
 <p style="text-align: center">
-<img alt="" src="Pics/lab1_3.png">
+<img alt="" src="Pics/lab1_3.png" height="300">
 Transistor
 </p>
 <p style="text-align: center">
-<img alt="" src="Pics/lab1_4.jpg">
+<img alt="" src="Pics/lab1_4.jpg" height="300">
 Modern CPUs
 </p>
 <p style="text-align: center">
-<img alt="" src="Pics/lab1_5.png">
+<img alt="" src="Pics/lab1_5.png" height="300">
 Billions Of Transistors Inside A CPU
 </p>
 
@@ -134,7 +134,7 @@ run will be copied from `Hard Disk` to `RAM`, The `RAM` is a temporally (volatil
 from `10GB` of word only `2GB` will be copied to the `RAM`, now the `RAM` will send these instructions to the `CPU` which will process the instruction that will be sent again to the `RAM` to be temporarily stored, if a data inside
 the `RAM` should be stored permanently then it will be copied from `RAM` to `Hard Disk`, and when toy close the program the data of that program will be removed from the `RAM` 
 <p style="text-align: center">
-<img alt="" src="Pics/lab1_7.jpg"> <br>
+<img alt="" src="Pics/lab1_7.jpg" height="300"> <br>
 Running Word Program
 </p>
 
@@ -151,7 +151,7 @@ the speed of the `CPU` it will be, we won't be able to utilize this speed no mat
 - When a program is slow/crashes/consume a lot of memory, one of the most important reason for all of the above problem is that the programmer who wrote the code has used the wrong `Data Structure` (or not using it at all)  
 - Let's observe the Logical Structure of the RAM from the following Diagram:
 <p style="text-align: center">
-<img alt="" src="Pics/lab1_8.png"> <br>
+<img alt="" src="Pics/lab1_8.png" height="300"> <br>
 Logical Structure of the RAM
 </p>
 
