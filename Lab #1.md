@@ -180,15 +180,16 @@ or even worked on projects. Then I want to congratulate you because you have lea
   9. `Functions`
   10. `Arrays`
   11. `Input`/`Output`
-  12. `OOP` (Programming 2 Main Topic)
+  12. `Object Oriented Programming (OOP)` (Programming 2 Main Topic)
 - They only differ in the `Syntax`, `Syntax` means the way of writing the code so that the `compiler` can understand what you are typing
 to be able to convert it into binary
 - So the bottom line, all programming languages have the same `Principles` but differ `Syntax`
 
 
 ## 10. Why we prefer using java in Programming 2 ?
-- The question here is why we prefer using java in Programming 2 ? , simply Because the structure of `Java` is in form of `OOP` `*`, which make it a lot better to understand & practice `OOP` principles and syntax using it
+- The question here is why we prefer using java in Programming 2 ? , simply Because the structure of `Java` is in form of `OOP*`, which make it a lot better to understand & practice `OOP` principles and syntax using it
 - And as we said, if you learned `OOP` in `Java`, then you have almost learned `OOP` in `C++` (Of course there might be more topics in either of them)
+- `*OOP` stands for `Object Oriented Programming`
 > So, `Java` Isn't really hard to learn `^-^`
 
 
@@ -262,12 +263,12 @@ int main()
       This is because the `Physical Structure of The RAM` is that it consists of many blocks each block is `1 Btyes` &  the most important part is that this block is Addressable
      (Has a physical address), this address is in hexadecimal number (from `0` to `9` & from `A` to `F`).<br>
      When you create a variable like this `int x;`, the compiler will then store this name in a table in which refers to an address
-     (something like `0F200`), so then `x -> 0F200`. When you type `cout<<x;`, the compiler will go to the table and see which address this variable name refers to, and then it will print the vale stored in it <br>
+     (something like `0F200`), so then `x -> 0F200`. When you type `cout<<x;`, the compiler will go to the table and see which address this variable name refers to, and then it will print the value stored in it <br>
     The problem here is that when you have a variable with name `1x`, then in that table `1x -> 0F200`. When you type `cout<<1x;`, the compiler will not understand whether `1x` is the variable name or the address, so to prevent this ambiguity we cannot start a variable name with a number 
   3. Don't name a variable with `Keywords` `*`: like `for`/`while`/`int`/`using`/`namesapce`/
      `do`/`if`/`else`/`break`/`continue`/`switch`/`class` and so on
 
-`*`: is a predefined or reserved word in C++ library with a fixed meaning and used to perform an internal operation. C++ Language supports more than 64 keywords.
+`*Keywords`: is a predefined or reserved word in C++ library with a fixed meaning and used to perform an internal operation. C++ Language supports more than 64 keywords.
 
 <p style="text-align: center">
 <img alt="" src="Pics/lab1_9.png" height="300"> <br>
