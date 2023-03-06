@@ -1,4 +1,4 @@
-## Programming 2 : Lab 1
+## Programming 2 - Lab #1
 ### By `TA Ahmed Arafat` (Ahmed Mohamed Yousry)
 
 ### Topics To Be Discussed:
