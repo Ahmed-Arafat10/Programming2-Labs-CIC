@@ -131,7 +131,10 @@ int main()
 ````
 #### 6. Increment Operators (Postfix & Prefix `++` `--`)
 - Postfix means `x++` or `x--` (whether it is increment or decrement)
-> Post word means before (before )
+> Post word means after (like saying post-war)
+
+- Prefix means `++x` or `--x` (whether it is increment or decrement)
+> Pre word means before (like saying prepaid)
 
 #### 7. Conditions (`if`/`else`/`else if`)
 #### 8. Comparison Operators ( `==` `!=` `>` `<` `>=` `<=`)
