@@ -100,9 +100,5 @@ sum is = 15
 ````
 
 ````cpp
-/*
- take about in the documentation
- - global var vs local to sum()
- - if variables passed to func sum(int n1,int n2) having the same name as the var in main() [show them the address of each one]
- */  
+
 ````
