@@ -69,7 +69,7 @@ class Lab6 {
 ````
 
 
-- `Problem #1` : 
+### `Problem #1` : 
 Create a class called `BankSystem.BankAcc` in a package called `BankSystem`, 
 with properties [name-age-email-password-balance], where each of
 [name-age] are accessible everywhere while [email] is only accessible inside that package,
@@ -86,14 +86,134 @@ finally create a LogIn(email,password) method that takes an email & password fro
 if yes then print text "welcome back" + Name of that user
 finally print the number of created Accounts from that class
 
-- `Problem #2` : 
+- `BackAcc.java` file
+````java
+package BankSystem;
+
+import java.util.Scanner;
+
+public class BankAcc {
+    static int NumOfAcc = 0;
+    // attributes of our class BankAcc
+    public String name;
+    String email; // ahmed@gmail.com
+    private String password;// cb
+    public int age;
+    private double balance;
+
+    // Parametrized Constructor for class BankAcc
+    public BankAcc(String name, int age, double balance, String Password) {
+        this.name = name;
+        this.age = age;
+        this.balance = balance;
+        setPassword(Password);
+        setEmail();
+        NumOfAcc++;
+    }
+
+    private boolean IsEmailValid(String em) {
+        int cnt_at = 0, cnt_dot = 0;//ahmed@gmail.com
+        for (int i = 0; i < em.length(); i++) {
+            if (em.charAt(i) == '@') cnt_at++;
+            if (em.charAt(i) == '.') cnt_dot++;
+        }
+        if (cnt_at == 1 && cnt_dot == 1) return true;
+        return false;
+    }
+
+    public void setEmail()// @ .
+    {
+        System.out.println("please enter a valid email");
+        Scanner sc = new Scanner(System.in);
+        String temp_email = sc.next();
+        while (!IsEmailValid(temp_email)) {
+            System.out.println("This Email is not valid, Please enter another email");
+            temp_email = sc.next();
+        }
+        this.email = temp_email;
+    }
+
+    private String Encryption(String PlainText)//ahmed
+    {
+        String CipherText = "";
+        // aaa ->> ddd   fff -> iii
+        // hi -> kl -> hi
+        // plaintext : zy123 -> ciphertext -> cb123
+        // ahmed ASCII Table   104 > 97
+        // a -> z
+        // "ahmed123"        '1' -> 49
+        // ahmed     'a' - 'a' = 0 + 3 = 3
+        // 'a' + 3 = 97 + 3 = 100
+        for (int i = 0; i < PlainText.length(); i++) {
+            if (PlainText.charAt(i) >= 'a' && PlainText.charAt(i) <= 'z')//ahmed
+            {
+                int CurCharInNumberAfterShifting = ((PlainText.charAt(i) - 'a') + 3) % 26;//28 % 26
+                int cipher = 'a' + CurCharInNumberAfterShifting;//97 + 28 = 125
+                CipherText += (char) cipher;//Casting
+            } else CipherText += PlainText.charAt(i);
+        }
+        return CipherText;
+    }
+
+    public void setPassword(String Password) {
+        String CipherText = this.Encryption(Password);
+        this.password = CipherText;/// ghtf15
+    }
+
+    public void LogIn(String em, String Pass)//login("ahmed@gmail.com","zy")
+    {
+        String EncryptedText = this.Encryption(Pass);
+        if (this.email.equals(em) && this.password.equals(EncryptedText)) {
+            System.out.println("Welcome Back," + this.name);
+        } else {
+            System.out.println("Not Authorized, Please Try Again");
+        }
+    }
+
+    public int getNumOfAcc()
+    {
+        return NumOfAcc;
+    }
+}
+````
+- `Main.java` file
+````java
+import BankSystem.BankAcc;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        // Inputs from the user
+        String name = sc.next();
+        int age = sc.nextInt();
+        double balance = sc.nextDouble();
+        String Password = sc.next();
+
+        BankAcc Ahmed = new BankAcc(name, age, balance, Password);
+        Ahmed.LogIn("ahmed@gmail.com", "ahmed123");// Authorized
+        Ahmed.LogIn("ahmed@gmail.com", "ahmed12");// Not Authorized
+        System.out.println("Num Of Created Accounts : " + Ahmed.getNumOfAcc());
+    }
+}
+/*
+arafat
+23
+1000
+ahmed123
+
+ahmed@gmail.com
+ */
+````
+
+
+### `Problem #2` : 
 create a class called `Calculator` that has three attributes [num1-num2-sign] where 
 they are all inaccessible outside that class, then create a constructor that initialize them
 then create 4 methods each calculate the `sum()`/`min()`/`div()`/`multi()`, they are all private.
 Then create another method called `Calc()` which contains a switch statement that check value of [sign] 
 then returns the value, then create another method that prints the value along the text
 
-- `Problem #3` (Enhanced `Problem #2`) :
+### `Problem #3` (Enhanced `Problem #2`) :
 create a class called `Calculator` that has three attributes [num1-num2-sign] where
 they are all inaccessible outside that class, then create a constructor that initialize them
 then create 4 methods each calculate the `sum()`/`min()`/`div()`/`multi()`, they are all private.
