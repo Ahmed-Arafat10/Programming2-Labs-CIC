@@ -1,5 +1,5 @@
 ### Practice Some Problems Using Java:
-- Problem #1 : Check if entered number is higher than 21 print adult otherwise print child
+- `Problem #1` : Check if entered number is higher than 21 print adult otherwise print child
 ````java
 import java.util.*;
 public class Practicing {
@@ -13,7 +13,7 @@ public class Practicing {
     }
 }
 ````
-- Problem #2 : Print hello boss if entered text is ahmed otherwise print I don't know you
+- `Problem #2` : Print hello boss if entered text is ahmed otherwise print I don't know you
 ````java
 import java.util.*;
 public class Practicing {
@@ -27,7 +27,7 @@ public class Practicing {
     }
 }
 ````
-- Problem #3 : make a calculator using switch
+- `Problem #3` : make a calculator using switch
 ````java
 import java.util.*;
 public class Practicing {
@@ -60,7 +60,7 @@ public class Practicing {
     }
 }
 ````
-- Problem #4 : print from 1 to n using while loop
+- `Problem #4` : print from 1 to n using while loop
 ````java
 import java.util.*;
 public class Practicing {
@@ -74,7 +74,7 @@ public class Practicing {
     }
 }
 ````
-- Problem #5 : print from n to 1 using while loop
+- `Problem #5` : print from n to 1 using while loop
 ````java
 import java.util.*;
 public class Practicing {
@@ -88,7 +88,7 @@ public class Practicing {
     }
 }
 ````
-- Problem #6 : print from 1 to n using for loop
+- `Problem #6` : print from 1 to n using for loop
 ````java
 import java.util.*;
 public class Practicing {
@@ -102,7 +102,7 @@ public class Practicing {
     }
 }
 ````
-- Problem #7 : print from n to 1 using for loop
+- `Problem #7` : print from n to 1 using for loop
 ````java
 import java.util.*;
 public class Practicing {
@@ -116,7 +116,7 @@ public class Practicing {
     }
 }
 ````
-- Problem #8 : take input from user until he enters -1 then print the summation
+- `Problem #8` : take input from user until he enters -1 then print the summation
 ````java
 import java.util.*;
 public class Practicing {
@@ -132,7 +132,7 @@ public class Practicing {
     }
 }
 ````
-- Problem #9 : insert elements in an array then print the sum & average
+- `Problem #9` : insert elements in an array then print the sum & average
 ````java
 import java.util.*;
 
@@ -154,7 +154,7 @@ public class Practicing {
     }
 }
 ````
-- Problem #10 : Quiz #1 - insert elements in an array then get max/min element 
+- `Problem #10` : Quiz #1 - insert elements in an array then get max/min element 
 ````java
 import java.util.*;
 
@@ -180,7 +180,7 @@ public class Practicing {
     }
 }
 ````
-- Problem #11 : Quiz #1 - enter numbers until the user enter -1 then return max element
+- `Problem #11` : Quiz #1 - enter numbers until the user enters `-1` then return max element
 ````java
 import java.util.*;
 
@@ -202,18 +202,19 @@ public class Practicing {
     }
 }
 ````
-- Problem #12 : Quiz #1 - reverse a string
+- `Problem #12` : Quiz #1 - reverse a string
 ````java
 import java.util.*;
 
 public class Practicing {
+    // Method #1
     static void Reverse(String str) {
         for (int i = str.length() - 1; i >= 0; i--) {
             System.out.print(str.charAt(i));
         }
         System.out.println("");
     }
-
+    // Method #2
     static String Reverse2(String str) {
         String temp = "";// ahmed
         for (int i = str.length() - 1; i >= 0; i--) {
@@ -230,7 +231,7 @@ public class Practicing {
     }
 }
 ````
-- Problem #13 : Quiz #1 - get area of a circle
+- `Problem #13` : Quiz #1 - get area of a circle
 ````java
 import java.util.*;
 
@@ -247,7 +248,7 @@ public class Practicing {
     }
 }
 ````
-- Problem #14 : Quiz #1 - get factorial
+- `Problem #14` : Quiz #1 - get factorial`*` of number `n`
 ````java
 import java.util.*;
 
@@ -267,7 +268,9 @@ public class Practicing {
     }
 }
 ````
-- Problem #15 : insert elements in an array then print reverse of elements
+> `*`factorial means if `n = 5`,then factorial of `5 = 5*4*3*2*1 = 120`, which means `n * n-1 * n-2 ... 2 * 1`
+
+- Problem #15 : insert elements in an array then print the reverse of elements
 ````java
 import java.util.*;
 
