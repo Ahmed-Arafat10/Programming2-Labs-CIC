@@ -1,0 +1,5 @@
+Problem #1: https://codeforces.com/group/ctwVty4ZXZ/contest/269553/problem/A
+Problem #2: https://codeforces.com/group/ctwVty4ZXZ/contest/269553/problem/B
+Problem #3: https://codeforces.com/group/ctwVty4ZXZ/contest/269553/problem/D
+Problem #4: https://codeforces.com/group/ctwVty4ZXZ/contest/269553/problem/F (use function sort() search for it)
+Problem #5: https://codeforces.com/group/ctwVty4ZXZ/contest/269553/problem/G
