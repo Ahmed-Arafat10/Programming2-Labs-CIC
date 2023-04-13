@@ -70,22 +70,25 @@ class Lab6 {
 
 
 ### `Problem #1` : 
-Create a class called `BankSystem.BankAcc` in a package called `BankSystem`, 
-with properties [name-age-email-password-balance], where each of
-[name-age] are accessible everywhere while [email] is only accessible inside that package,
-while [password-balance] are accessible only inside that class,
-then create an initialization method that is called automatically when an object is created from that class that
-initialize both [name-age-balance] with any value from the user (take an input from him)
-and then in this initialization method call a setter method that set the value of [email] attribute,
+- Create a class called `BankSystem.BankAcc` in a package called `BankSystem`, 
+- With properties `name`-`age`-`email`-`password`-`balance`
+- Each of `name`-`age` are accessible everywhere while `email` is only accessible inside that package,
+- While `password`-`balance` are accessible only inside that class
+- Then create an initialization method that is called automatically when an object is created from that class that
+initialize both `name`-`age`-`balance` with any value from the user (take an input from him)
+- Then in this initialization method call a `setter()` method that set the value of `email` attribute,
 this method checks if the email contains `@` & `.` characters
 then if the email does not contain one of them it still takes input from the user till the email contains both of them
-,then create another setter method that set the [password] attribute,
-- this method takes the password form the user and then store it encrypted (using `Caesar` cipher)
-then create two getter methods that just print value of email and encrypted password
-finally create a LogIn(email,password) method that takes an email & password from the user then check if they are matched with values in that object or not
-if yes then print text "welcome back" + Name of that user
-finally print the number of created Accounts from that class
+- Then create another setter method that set the `password` attribute,
+- This method takes the password from the user and then store it encrypted (using `Caesar` cipher)
+- All of the above methods are called inside the constructor (Remember)
+- Then inside that class, create 2 `getter()` methods that just print value of `email` and` encrypted password`
+- Finally, create a `LogIn(email,password)` method that takes an `email` & `password` from the user then check if 
+they are matched with values in that object or not
+- If yes then print text `"welcome back" + Name` of that user Otherwise print `"Not Authorized, Please Try Again"`
+- Finally print the number of created Accounts from that class (Hint: use static attribute to count number of created objects)
 
+### Solution
 - `BackAcc.java` file
 ````java
 package BankSystem;
@@ -170,8 +173,15 @@ public class BankAcc {
         }
     }
 
-    public int getNumOfAcc()
-    {
+    public String getEmail() {
+        return this.email;
+    }
+
+    public String getPassword() {
+        return this.password;
+    }
+   
+    public int getNumOfAcc() {
         return NumOfAcc;
     }
 }

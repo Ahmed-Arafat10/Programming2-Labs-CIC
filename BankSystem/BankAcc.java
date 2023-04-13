@@ -3,6 +3,7 @@ package BankSystem;
 import java.util.Scanner;
 
 public class BankAcc {
+    protected String SSN;
     static int NumOfAcc = 0;
     // attributes of our class BankAcc
     public String name;
@@ -80,8 +81,7 @@ public class BankAcc {
         }
     }
 
-    public int getNumOfAcc()
-    {
+    public int getNumOfAcc() {
         return NumOfAcc;
     }
 }
