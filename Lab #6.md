@@ -3,7 +3,7 @@
 
 ### Topics To Be Discussed:
 1. Encapsulation
-   1. Access Modifiers for attributes (`public`/`private`/`protected`/`default`)
+   1. Access Modifiers for Attributes/Method (`public`/`private`/`protected`/`default`)
    2. Access Modifiers for classes (`public`/`default`)
    2. Package & SubPackage
    3. Getter & Setter 

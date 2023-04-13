@@ -4,7 +4,7 @@
 ### Topics To Be Discussed:
 1. Inheritance
 2. Protected Access Modifier (accessed in the same package & for subclasses)
-3. Multiple Inheritance (NOT SUPPORTED IN JAVA)
+3. Multiple Inheritance (`NOT SUPPORTED IN JAVA`)
 4. Multi-Level Inheritance
 5. Final classes
 6. Super keyword to access parent class's attributes
@@ -91,6 +91,7 @@ class Human {
     protected String email;
 
     public Human(String name, String email) {
+      System.out.println("Human Constructor");
         this.name = name;
         this.email = email;
     }
@@ -107,6 +108,7 @@ class Employee extends Human {
 
     public Employee(String name, String personal_email, String work_email, String Dep, float Sal) {
         super(name, personal_email);
+        System.out.println("Employee Constructor");
         email = work_email;
         Department = Dep;
         Salary = Sal;
@@ -123,7 +125,7 @@ class Employee extends Human {
 }
 
 final class Manager extends Employee {
-    public String ManagingTeam;
+    private String ManagingTeam;
 
     public Manager(String name,
                    String personal_email,
@@ -131,6 +133,7 @@ final class Manager extends Employee {
                    String Dep,
                    float Sal) {
         super(name, personal_email, work_email, Dep, Sal);
+        System.out.println("Manager Constructor");
     }
 
     public String getMangingTeam() {
