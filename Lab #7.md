@@ -1,4 +1,4 @@
-## Programming 2 - Lab #7
+## Programming 2 - Lab #7 : Inheritance
 ### By `TA Ahmed Arafat` (Ahmed Mohamed Yousry)
 
 ### Topics To Be Discussed:

@@ -1,4 +1,4 @@
-## Programming 2 - Lab #6
+## Programming 2 - Lab #6 : Encapsulation
 ### By `TA Ahmed Arafat` (Ahmed Mohamed Yousry)
 
 ### Topics To Be Discussed:
