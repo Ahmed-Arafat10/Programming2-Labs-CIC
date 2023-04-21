@@ -10,10 +10,10 @@ There are many OOP languages including JavaScript,C++,Java
 
 
 ### Advantage Of OOP
-1. OOP is faster and easier to implement.
-2. OOP gives the programs a clear & proper structure.
-3. OOP easy in maintenance, modification, and debugging of code.
-4. OOP allows you to create fully reusable applications with less code and less time.
+1. OOP is faster and easier to implement (Development).
+2. OOP gives the programs a clear, clean & **proper structure**.
+3. OOP easy in **modification** and **debugging** of code.
+4. OOP allows you to create fully **reusable** applications with **less code and less time**.
 
 
 ### Principles of OOP
