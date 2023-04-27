@@ -111,3 +111,8 @@ class test {
 - Return type must be same, if it is not same then the method is neither overridden nor overloaded.
 - Final and static methods cannot be overridden.
 - Method can be overridden with same or lenient (public, protected) access modifiers but the stricter(private) access modifiers cannot be used in subclass.  
+
+
+### References
+- ChatGPT
+- Abdul Bari
