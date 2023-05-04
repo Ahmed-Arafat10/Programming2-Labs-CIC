@@ -1,0 +1,20 @@
+Create `BankAccount` class
+with `balance`/`username`/`bankname`
+& `country` variable with value `Egypt` that is same among all objects & (not changeable)
+`NumOfUsers` variable to store number of users in the system
+`NumOfcalls` variable to store number of calls of functions in the system
+
+Then create function to initialize the balance with 0 (other variables are empty)
+then make these objects automatically print any text when they are created
+then create another function to initialize balance with value [X] & initialize 
+other variables
+
+create function: Deposite()-> add new money to user's balance
+				 Withdraw()-> remove certain amount of money from user's balance 
+
+create 2 objects, first one initialize the balance with 0
+second one initialize balance with value [X] then call Deposite()/Withdraw()
+then print last value of balance
+
+Also print number of users in the system & number of calls for both (Deposite()/Withdraw())
+functions

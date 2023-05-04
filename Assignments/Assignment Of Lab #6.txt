@@ -1,0 +1,44 @@
+++++++++++++++++++++++++++++++
++++++++Read it carefully++++++
+++++++++++++++++++++++++++++++
+
+create a package called `BankSystem`
+in it create 4 .java files (4 classes) -> `human` - `employee` - `customer` - `BankAccount`
+
+for `human` class:
+1- attributes -> Name,Age,Gender 	they are all for visible to this class & other inherited classes ONLY
+2- create a constructor for this class that initialize the above variables
+3- PrintData() function that prints all above variables
+`human` class should be visible ONLY to classes in its package (BankSystem package)
+4- Greet() function that print text "Good Morning", this function cannot be overridden by subclasses
+
+for `employee` class:
+1- make this class have same attributes as human class
+2- add its own attributes -> salary, department (visible only inside the class)
+3- add a constructor for it that initialize first attributes of its parent class (hint use super() to call parent constructor) 
+then initialize its attributes
+4- override PrintData() function of parent class (human) to print  [salary, department] attributes in addition to [Name,Age,Gender] attributes
+5- add getter functions for both salary, department
+
+create a `Bankaccount` class that cannot be inherited 
+1- add balance attribute that is inaccessible from outside classes & can store decimal values
+2- create a getter & 2 setter functions where getter function always returns balance + 10% of balance
+& first setter that assign `balance` attribute with a value (use += NOT =) unless this value is less than ZERO or higher than 1,000,000 (prevent this cases from happening)
+& second setter function that have SAME NAME AS FIRST SETTER FUNTION but takes TWO PARAMETERS, first one is value & second one is Tax_percent
+for example -> Setter(balance,Tax) then in this function this.balance += balance - (balance * (Tax/100))
+[means that if you have 1000LE & tax is 10% then your balane will increase by 900 not 1000]
+
+for `customer` class:
+1- make this class inherit from human class
+2- add its own attributes -> SSN,Address (visible only inside the class)
+3- add a constructor for it that initialize first attributes of its parent class (hint use super() to call parent constructor) 
+then initialize its attributes
+4- create an object from class `BankAccount` inside `customer` as an attribute {BONUS Requirements}
+
+finally create 1 object for each of following classes `employee` - `customer` - `BankAccount`
+than call all of above functions
+
+please JUST send me 4 [.java] files (4 classes) -> `human` - `employee` - `customer` - `BankAccount` + main file
+& screenshot of output
+
+if you have any problem don't hesitate to ask me
