@@ -6,7 +6,7 @@
 
 
 ## 1. Monolithic Vs Procedural (Functional) Programming
-- In old lanuages like
+- In old languages like
 
 ````cpp
 #include <iostream>
