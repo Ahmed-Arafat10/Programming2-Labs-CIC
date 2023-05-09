@@ -9,7 +9,6 @@
 5. Assignment On Abstract Class (MacDonald's Problem)
 6. `HAS-A` relationship
 7. Array of Objects
-8. Arraylist
 
 ### 1. Method Overloading
 - Method Overloading is a feature in Java that allows you to define multiple methods in a class with the same name but with different parameters. The methods must differ in the number, type, or order of their parameters.
@@ -73,7 +72,66 @@ and print text `an object is created from Human`, then add method `Speak()` that
 - Finally, create another class called `Programmer` that extends from `Human` and define its body
 - Now create Two objects one from `Student` & the other from `Programmer`
 
-#### Problem #2 :
+#### Solution:
+````java
+abstract class Human {
+    public String Name;
+
+    public Human() {
+        System.out.println("an object is created from Human");
+    }
+
+    public final void Speak() {
+        System.out.println("Hello Everyone");
+    }
+
+    public abstract void PrintYourJob();
+
+    public abstract void PrintYourStatus();
+}
+
+class Student extends Human {
+    @Override
+    public void PrintYourJob() {
+        System.out.println("I'm Student");
+    }
+
+    @Override
+    public void PrintYourStatus() {
+        System.out.println("I'm Single");
+    }
+}
+
+class Programmer extends Human {
+    @Override
+    public void PrintYourJob() {
+        System.out.println("I'm Programmer");
+    }
+
+    @Override
+    public void PrintYourStatus() {
+        System.out.println("I'm Married");
+    }
+}
+
+public class Solve {
+
+    public static void main(String[] args) {
+        // Human arafat  = new Human(); [ERROR]
+        Student Mina = new Student();
+        Mina.PrintYourJob();
+        Mina.PrintYourStatus();
+        Mina.Speak();
+        
+        Student Arafat = new Student();
+        Arafat.PrintYourJob();
+        Arafat.PrintYourStatus();
+        Arafat.Speak();
+    }
+}
+````
+
+#### Problem #2 (Solve It With Yourself):
 - Create a class called `Shape` that contains a default constructor that prints `Hi I'm a Shape`, then create to abstract methods `Area()`/`Primeter()` 
 - Then create two classes called `Circle` & `Rectangle` that inherit from Shape
 - Then create two objects from `Circle` & `Rectangle`
@@ -112,14 +170,155 @@ and then I should write `abstract` keyword to subclass
 also create another function called `Offers(string offer)`		
 that is used for printing offers available for each specific branch, each branch has his own way of printing the offer
 
+#### Solution:
+````java
+abstract class McDonalds {
+    public McDonalds() {
+        System.out.println("One of McDonalds branches is opened");
+    }
+    public final void MakeBigMac() {
+        System.out.println("Making of Big Mac");
+    }
+    public final void MakeBigTasty() {
+        System.out.println("Making of Big Tasty");
+    }
+    public abstract void Billing();
+    public abstract void Offers(String offer);
+    public void Offers() {
+        System.out.println("ths is an offer from MAC brand");
+    }
+}
+
+class EgyMcdonalds extends McDonalds {
+    @Override
+    public void Billing() {
+        System.out.println("14% VAT in Egypt");
+    }
+    @Override
+    public void Offers(String offer) {
+        System.out.println("Offers in Egypt: " + offer);
+    }
+}
+
+public class Solve {
+    public static void main(String[] args) {
+        EgyMcdonalds Zamalek = new EgyMcdonalds();
+        Zamalek.MakeBigTasty();
+        Zamalek.MakeBigMac();
+        Zamalek.Offers();
+        Zamalek.Offers("10 Big Mac only Pay 100 L.E");
+        Zamalek.Billing();
+    }
+}
+````
 
 ### 6. `HAS-A` relationship
+- In Java, the HAS-A relationship refers to a type of association where one object "has" another object as one of its properties or attributes. This relationship is also known as composition.
+#### Example:
+````java
+class BackAcc {
+    public int AccNum;
+    public double balance;
+
+    public BackAcc(int accNum, double balance) {
+        AccNum = accNum;
+        this.balance = balance;
+    }
+    public void BackAccData() {
+        System.out.println("Ny acc number is:" + AccNum + ", my balance is :" + balance);
+    }
+}
+
+class Human {
+    public String Name;
+    public int Age;
+    public BackAcc myAcc;
+    public Human(String name, int age, int acc, double balance) {
+        Name = name;
+        Age = age;
+        myAcc = new BackAcc(acc, balance);
+    }
+
+    public void HumanData() {
+        System.out.println("Ny name is:" + Name + ", my Age is :" + Age);
+    }
+}
+
+public class Solve {
+    public static void main(String[] args) {
+        Human arafat = new Human("Ahmed Arafat", 23, 12340101, 10000);
+        System.out.println(arafat.Age); // 23
+        System.out.println(arafat.Name); // Ahmed Arafat
+        System.out.println(arafat.myAcc.balance);// 12340101
+        System.out.println(arafat.myAcc.balance);// 10000
+        arafat.myAcc.BackAccData();
+        arafat.HumanData();
+    }
+}
+````
 
 ### 7. Array of Objects
 
-### 8. Arraylist
+In Java, an array of objects is simply an array where each element is an object of a particular class type. This allows for the creation of collections of objects, similar to how an array of primitive types (`int`/`double`/'string`) allows for the creation of collections of values.
+````java
+class BackAcc {
+    public int AccNum;
+    public double balance;
 
+    public BackAcc(int accNum, double balance) {
+        AccNum = accNum;
+        this.balance = balance;
+    }
+    public void BackAccData() {
+        System.out.println("Ny acc number is:" + AccNum + ", my balance is :" + balance);
+    }
+}
 
+class Human {
+    public String Name;
+    public int Age;
+    public BackAcc myAcc;
+    public Human(String name, int age, int acc, double balance) {
+        Name = name;
+        Age = age;
+        myAcc = new BackAcc(acc, balance);
+    }
+
+    public void HumanData() {
+        System.out.println("Ny name is:" + Name + ", my Age is :" + Age);
+    }
+}
+
+public class Solve {
+
+    public static void main(String[] args) {
+
+        // Create an array of objects of class BankAcc
+        BackAcc[] ClientAccounts = new BackAcc[3];
+        ClientAccounts[0] = new BackAcc(111,1000);
+        ClientAccounts[1] = new BackAcc(222,2000);
+        ClientAccounts[2] = new BackAcc(333,3000);
+
+        System.out.println(ClientAccounts[0].balance); // 1000
+        System.out.println(ClientAccounts[1].balance); // 2000
+        System.out.println(ClientAccounts[0].AccNum); // 111
+        System.out.println(ClientAccounts[1].AccNum); // 222
+        ClientAccounts[1].BackAccData();
+
+        Human[] Persons = new Human[3];
+        Persons[0] = new Human("Ahmed", 23, 999, 99999);
+        Persons[1] = new Human("Mohamed", 46, 888, 99999);
+        Persons[2] = new Human("Yousry", 70, 777, 99999);
+
+        System.out.println(Persons[0].myAcc.AccNum);// 999
+        System.out.println(Persons[1].myAcc.AccNum);// 888
+        System.out.println(Persons[2].myAcc.AccNum);// 777
+        
+        Persons[2].HumanData();
+        Persons[2].myAcc.BackAccData();
+    }
+}
+````
 
 ### References
 - ChatGPT
