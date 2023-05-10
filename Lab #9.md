@@ -66,7 +66,7 @@ int sum3 = calculator.add(1, 2, 3); // calls the third add method with three int
 
 ### 3. Solving On Abstract Class
 #### Problem #1 : 
-- Create a class `Human` with name attribute and contractor that initialize it
+- Create a class `Human` with name attribute and constructor that initialize it
 and print text `an object is created from Human`, then add method `Speak()` that print text `Hello Everyone`, then create a method called `PrintYourJob()` that define a STANDARD for each subclass, each HAS HIS OWN WAY of implementing it
 - Then create `Student` Class that implements the `PrintYourJob()` method and create another method in it called `Study()` that print any text
 - Finally, create another class called `Programmer` that extends from `Human` and define its body
