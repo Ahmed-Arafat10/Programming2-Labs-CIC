@@ -60,7 +60,7 @@ Call to `super()` must be first statement in Derived Class constructor.
 ### Problem #1
 - create a class called `Human` with attributes `name` which is accessible anywhere
 & `email` which is accessible only in the same package or subclasses inherit from it
-- Then create a parametrized contractor 
+- Then create a parametrized constructor 
 - Then create a method called `Sleeping()` that print text `"I am sleeping now"`,
 this method only accessible within that class
 
